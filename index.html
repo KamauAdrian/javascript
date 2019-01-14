@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue Javascript</title>
+	<script type="text/Javascript" src="js/vue.js"></script>
+</head>
+<body>
+	<div id="root">
+		<input type="text" id="input" v-model="message">
+	</div>
+	<div id="app">
+  {{ message }}
+</div>
+
+
+<script>
+
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
+
+
+
+
+	
+	let data = {
+		message:'Hello World';
+	};
+
+new Vue({
+	el:'#root',
+	data:data
+});
+	document.querySelector('#input').value = data.message;
+
+
+</script>
+
+</body>
+</html>
